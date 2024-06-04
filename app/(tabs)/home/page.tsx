@@ -5,8 +5,9 @@ import GroupCard from "@/components/ui/group-card"
 import EmblaCarousel from "@/components/ui/EmblaCarousel"
 import { EmblaOptionsType } from "embla-carousel"
 import { groupCards } from "@/lib/utils"
+import { AddGroupHeader } from "@/components/ui/addGroupHeader"
 
-export default function Dashboard() {
+export default function Home() {
     const OPTIONS: EmblaOptionsType = {containScroll: false}
     const SLIDES = groupCards
     return (
@@ -21,10 +22,11 @@ export default function Dashboard() {
                     />
                 </div>
             </header>
-            <h1 className="text-xl font-bold ml-6">Based on your Department</h1>
+            <AddGroupHeader />
+            <h1 className="text-xl font-bold ml-6 text-primary">Based on your Department</h1>
             <EmblaCarousel slides={SLIDES} options={OPTIONS} />
 
-            <h1 className="text-xl font-bold ml-6 mt-6">Made by Students</h1>
+            <h1 className="text-xl font-bold ml-6 mt-6 text-primary">Made by Students</h1>
             <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
     )

@@ -63,7 +63,7 @@ import React, {
   
     return (
       <button
-        className="embla__button embla__button--prev"
+        className="embla__button embla__button--prev hover:bg-primary"
         type="button"
         {...restProps}
       >
@@ -83,7 +83,7 @@ import React, {
   
     return (
       <button
-        className="embla__button embla__button--next"
+        className="embla__button embla__button--next hover:bg-primary"
         type="button"
         {...restProps}
       >
